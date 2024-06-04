@@ -1,0 +1,186 @@
+@startuml
+
+class Game {
+  - player1 : Player
+  - player2 : Player
+  - playerPlay : int
+  - playerWinner : String
+  - in : BufferedReader
+
+  + init() : void
+  + play() : void
+  + end() : void
+  - over() : boolean
+  - setOpponentType() : String
+  - setFirstPlayer() : void
+  - printGameLauncher() : void
+}
+
+class Player {
+  # playerName : String
+  # board : Board
+  # in : BufferedReader
+  - statNbTotalShot: int
+  - statNbBoatShot : int
+  - lastCellShot : Cell
+
+  # incrementStatNbTotalShot(): void
+  # incrementStatNbSuccessfullShot(): void
+  # incrementStatNbBoatShot(): void
+  # getBoard() : Board
+  # getPlayerName() : String
+  # printStats() : void
+  # getLastCellShot() : Cell
+  # setLastCellShot(x : int, y : int) : void
+}
+
+class Board {
+  - board: Cell[][]
+  - boats : Boat[]
+  - nbBoats : int
+
+  + getCell(x: int, y: int): Cell
+  + showPersonnalBoard(): void
+  - showPlayBoard(
+      player : Player,
+      enemy : Player
+    ) : void
+  + addBoat(boat : Boat) : void
+  + existsOverlap(cells : Cell[]) : boolean
+  + generateBoatCoordinates(
+      x : int,
+      y : int,
+      direction : String,
+      boatSize : int
+      boatId : int
+    ) : Cell[]
+  + getBoats() : Boat[]
+  + getBoats(boatId : int) : Boat
+  + getCells() : Cell[]
+  - generateBlankBoard(w : int, h : int) : Cell[][]
+  - getNbBoats() : int
+}
+
+class Cell {
+  - x : int
+  - y : int
+  - id : int
+  - shot : boolean
+  - potential : boolean
+
+  + addBoat(id : int) : void
+  + updatePotential(value : boolean) : void
+  + isPotential() : boolean
+  + getX() : int
+  + getY() : int
+  + shoot() : void
+  + public isShot() : boolean
+  + getId() : int
+}
+
+class Boat {
+  - id: int
+  - name : String
+  - cells : Cell[]
+  - direction: String
+
+  - isSunk(): boolean
+  - getCells(cellPosition : int) : Cell
+  - getCells(x : int, y : int) : Cell
+  + getCells() : Cell[]
+  + getId() : int
+  + getSize() : int
+  + getName() : String
+  + getDirection() : String
+}
+
+class PlayerComputer extends Player {
+  - difficulty: int
+  - knownBoatCells : Cell[]
+  - potentialCells : Cell[]
+  - currentBoat : int
+
+  # shoot(enemy : Player) : void
+  # placeBoats() : void
+  # setPlayerName() : void
+  - setDifficulty() : void
+  - cellArrayAdd(
+      array : Cell[],
+      cell : Cell
+    ) : Cell[]
+  - freezeCell(array : Cell[], player Player) : void
+  - updatePotentialCells(
+      knownBoatCells : Cell[],
+      player : Player
+    ) : void
+  - updateNonPotentialCells(
+      array : Cell[],
+      player : Player
+    ) : void
+  - nickBerryAlgorithm(board : Board) : int[]
+  - neighbors(cell1 : Cell, cell2 : Cell) : boolean 
+}
+
+class PlayerHuman extends Player {
+  # shoot(enemy : Player) : void
+  # placeBoats() : void
+  # setPlayerName() : void
+}
+
+class CoordinateHelper {
+  + letterCoordinateToNumber(
+      coordinate : String,
+    ) : String
+  + numberCoordinateToLetter(
+      coordinate : int,
+    ) : String
+  + isValid(x : int, y : int) : boolean
+}
+
+class ConsoleHelper {
+  + eraseConsole(): void
+  + sleep(millies: long): void
+}
+
+class TextHelper {
+  + ANSI_RESET: String
+  + ANSI_RED: String
+  + ANSI_GREEN: String
+  + ANSI_BLUE: String
+  + ANSI_PURPLE: String
+  + ANSI_BLACK_BACKGROUND: String
+  + ANSI_CYAN_BACKGROUND: String
+
+  + generateSpaceBlanks(
+      spaceSize: int
+    ) : void
+}
+
+class Config {
+  - boats: String[][]
+
+  - getBoatsConfig(): String[][]
+  - getBoatsConfig(boatId : int) : String[]
+  - getNbBoats() : int
+}
+
+class Menu {
+  - in : BufferedReader
+
+  + selectOption() : int
+  + showMenu(): void
+  + showRules(): void
+  + showAbout(): void
+}
+
+Game -right-> Player
+Player --|> Board : Use
+Player |--| Board : Use
+Player <|-- Board : Use
+PlayerComputer --|> Cell : Use
+Board --|> Cell
+Board --|> Cell : Use
+Board --|> Boat : Use
+Boat --|> Cell : Use
+
+@enduml
