@@ -122,9 +122,9 @@ public class Menu {
         System.out.println("     2021 - Réutilisation et modification autorisée");
         System.out.println("     Dernière mise à jour le 02/06/2021");
         System.out.println();
-        System.out.println("     @Marius Chalumeau - Développeur");
-        System.out.println("     @Lucile Bonnefoy - Développeur");
-        System.out.println("     @Jeremy Banks - Développeur");
+        System.out.println("     @OTI Paul - Développeur");
+        System.out.println("     @PITO Matahi - Développeur");
+        System.out.println("     @CORBIN DE BROCA - Développeur");
         System.out.println();
         System.out.println("     ╔══════════════════════╗  ╔══════════════════════╗  ╔══════════════════╗  ╔════════════════════╗");
         System.out.println("     ║ 0. Retourner au menu ║  ║ 1. Lancer une partie ║  ║ 2. Règles du jeu ║  ║ 3. En savoir  plus ║");
