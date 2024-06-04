@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.ObjectInputFilter.Config;
 import java.util.regex.Pattern;
 
 import helpers.ConsoleHelper;
@@ -107,7 +108,7 @@ public class Menu {
         System.out.println("║                         En savoir plus sur ce projet                         ║");
         System.out.println("╚══════════════════════════════════════════════════════════════════════════════╝");
         System.out.println();
-        System.out.println("     Ce jeu a été développé dans le cadre du projet de fin d'année du cours Algorithmique et programmation 1 & 2 dispensé en première année de FIMI à l'INSA Lyon.");
+        System.out.println("     Ce jeu a été développé dans le cadre du projet de fin d'année du cours NPF121 en troisème année de licence Informatique au sein du CNAM Polynéise.");
         System.out.println("     Il utilise les notions d'algorithmique et de programmation en Java découvertes tout au long de l'année mais également d'autres notions découvertes dans un cadre extra-scolaire.");
         System.out.println();
         System.out.println("     --------------- Comment jouer ? ---------------");
@@ -119,7 +120,7 @@ public class Menu {
         System.out.println();
         System.out.println("     ------------------- Crédits -------------------");
         System.out.println();
-        System.out.println("     2021 - Réutilisation et modification autorisée");
+        System.out.println("     2024 - Réutilisation et modification autorisée");
         System.out.println("     Dernière mise à jour le 02/06/2021");
         System.out.println();
         System.out.println("     @OTI Paul - Développeur");
