@@ -4,9 +4,7 @@
 
 ## Introduction
 
-Ce jeu a été développé dans le cadre du projet de fin d'année du cours *Algorithmique et programmation 1 & 2* dispensé en première année de *FIMI* à l'*[INSA Lyon](https://www.insa-lyon.fr/)*.
-
-Il utilise les notions d'algorithmique et de programmation en [Java](https://www.java.com/fr/) découvertes tout au long de l'année mais également d'autres notions découvertes dans un cadre extra-scolaire.
+Ce jeu a été développé dans le cadre du projet en programmation avancée au CNAM PF.
 
 ## Règles du jeu
 
@@ -35,14 +33,13 @@ Le jeu se joue intégralement à la console.
 Il est possible de modifier le nombre de bateaux de chaque joueur ainsi que leur propriétés en éditant le fichier de configuration `\src\Config.java`.
 
 ## Crédits
-2021 - Réutilisation et modification autorisées
 
-Dernière mise à jour le 02/06/2021
+Dernière mise à jour le 04/06/2024
 
 ------------------
 
-[@Lucile Bonnefoy](lucile.bonnefoy@insa-lyon.fr) - Développeur
+Matahi PITO - Développeur
 
-[@Jeremy Banks](jeremy.banks@insa-lyon.fr) - Développeur
+Nuiiti CORBIN DE BROCA - Développeur
 
-[@Marius Chalumeau](https://www.uinnov.fr) - Développeur
+Paul OTI - Développeur
