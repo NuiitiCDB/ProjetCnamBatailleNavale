@@ -10,6 +10,9 @@
 
 Ce jeu a été développé dans le cadre du projet en programmation avancée au CNAM PF.
 
+https://github.com/NuiitiCDB/ProjetCnamBatailleNavale/assets/153875358/5813b466-e1ab-464e-9e4c-74de2977d895
+
+
 ## Règles du jeu
 
 > La bataille navale, appelée aussi touché-coulé, est un jeu de société dans lequel deux joueurs doivent placer des « navires » sur une grille tenue secrète et tenter de « toucher » les navires adverses. Le gagnant est celui qui parvient à couler (c'est à dire toucher toutes les cases) tous les navires de l'adversaire avant que tous les siens ne le soient.
