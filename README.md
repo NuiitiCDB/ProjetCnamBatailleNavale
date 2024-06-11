@@ -38,7 +38,7 @@ Il est possible de modifier le nombre de bateaux de chaque joueur ainsi que leur
 
 ## Crédits
 
-Dernière mise à jour le 04/06/2024
+Dernière mise à jour le 11/06/2024
 
 ------------------
 
