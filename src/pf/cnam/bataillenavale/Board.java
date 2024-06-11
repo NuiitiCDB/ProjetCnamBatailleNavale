@@ -4,7 +4,7 @@ import pf.cnam.bataillenavale.helpers.CoordinateHelper;
 import pf.cnam.bataillenavale.helpers.TextHelper;
 
 /**
- * Represents a board which contains a 2D array of cells
+ * Représente un tableau qui contient un tableau 2D de cellules
  */
 public class Board {
 
@@ -18,7 +18,7 @@ public class Board {
     }
 
     /**
-     * Return a specific cell of the board
+     * Renvoyer une cellule spécifique du tableau
      * 
      * @param int x
      * @param int y
@@ -30,7 +30,7 @@ public class Board {
     }
 
     /**
-     * Shows personnal board
+     * Affiche le tableau personnel
      *
      * @return void
      */
@@ -78,7 +78,7 @@ public class Board {
     }
 
     /**
-     * Shows the play board, i.e. the board of both players
+     * Affiche le plateau de jeu, c’est-à-dire le plateau des deux joueurs
      * 
      * @param Player player
      * @param Player enemy
@@ -113,7 +113,7 @@ public class Board {
                 System.out.println("  ╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗        ╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗");
             }
 
-            // We loop on the columns of the first grid (player's grid)
+            // On boucle sur les colonnes de la première grille (grille du joueur)
             for (int i = 0; i < board[j].length; i++) {
                 if (i == 0) {
                     System.out.print(CoordinateHelper.numberCoordinateToLetter(j) + " ║");
@@ -121,7 +121,7 @@ public class Board {
                     System.out.print("║");
                 }
 
-                // If it is the last shot did by the opponent, it is displayed in blue
+                // S’il s’agit du dernier tir effectué par l’adversaire, il est affiché en bleu
                 if (i == enemy.getLastCellShot().getX() && j == enemy.getLastCellShot().getY()) {
                     System.out.print(TextHelper.ANSI_CYAN_BACKGROUND);
                 }
@@ -136,7 +136,7 @@ public class Board {
                     System.out.print("   ");
                 }
 
-                // If it is the last shot did by the opponent, it is displayed in blue. We put it back here in black
+                // S’il s’agit du dernier tir effectué par l’adversaire, il est affiché en bleu. Nous l’avons remis ici en noir
                 if (i == enemy.getLastCellShot().getX() && j == enemy.getLastCellShot().getY()) {
                     System.out.print(TextHelper.ANSI_BLACK_BACKGROUND);
                 }
@@ -146,7 +146,7 @@ public class Board {
                 }
             }
             System.out.print("      ");
-            // We loop on the columns of the second grid (opponent's grid on which the players' previous shots are marked)
+            // On boucle sur les colonnes de la deuxième grille (grille de l’adversaire sur laquelle sont marqués les coups précédents des joueurs)
             for (int i = 0; i < enemyBoard[j].length; i++) {
                 if (i == 0) {
                     System.out.print(CoordinateHelper.numberCoordinateToLetter(j) + " ║");
@@ -234,7 +234,7 @@ public class Board {
     }
 
     /**
-     * Adds a boat to the existing boat array
+     * Ajoute un bateau au réseau de bateaux existant
      * 
      * @param Boat boat
      * 
@@ -253,7 +253,7 @@ public class Board {
     }
 
     /**
-     * Checks that the boat doesn't have an immediate neighbor
+     * Vérifie que le bateau n’a pas de voisin immédiat
      *
      * @param Cell[] cells
      * 
@@ -262,8 +262,8 @@ public class Board {
     public boolean existsNeighbors(Cell[] cells) {
 
         /*
-         * We take as parameter the potential cells occupied by the boat. 
-         * We look at the cells of the two end points that we store in 4 variables.
+         * On prend en paramètre les cellules potentielles occupées par le bateau. 
+         * Nous regardons les cellules des deux points d’extrémité que nous stockons dans 4 variables.
          */
         int minX = cells[0].getX();
         int minY = cells[0].getY();
@@ -288,7 +288,7 @@ public class Board {
     }
 
     /**
-     * Checks that the (simulated) coordinates of a boat don't exceed the limits of the board
+     * Vérifie que les coordonnées (simulées) d’un bateau ne dépassent pas les limites de la planche
      *
      * @param Cell[] cells
      * 
@@ -304,7 +304,7 @@ public class Board {
     }
 
     /**
-     * Checks if the coordinates of a boat overlap with another those of another boat
+     * Vérifie si les coordonnées d’un bateau se chevauchent avec celles d’un autre bateau
      *
      * @param Cell[] cells
      * 
@@ -320,8 +320,8 @@ public class Board {
     }
 
     /**
-     * Takes in a direction and a position and generates the list of the coordinates
-     * of the cells that are concerned
+     * Prend une direction et une position et génère la liste des coordonnées
+     * des cellules concernées
      *
      * @param int    x
      * @param int    y
@@ -345,7 +345,7 @@ public class Board {
     }
 
     /**
-     * Gets the tab of boats of a player
+     * Obtient l’onglet des bateaux d’un joueur
      * 
      * @return Boat[]
      */
@@ -354,7 +354,7 @@ public class Board {
     }
 
     /**
-     * Get a player boat
+     * Obtenez un bateau de joueur
      * 
      * @param int boatId
      * 
@@ -370,7 +370,7 @@ public class Board {
     }
 
     /**
-     * Gets the tab of the board's cells
+     * Obtient l’onglet des cellules du tableau
      * 
      * @return Cell[][]
      */
@@ -379,7 +379,7 @@ public class Board {
     }
 
     /**
-     * Fills up the board with empty cells
+     * Remplit le tableau de cellules vides
      * 
      * @param int w
      * @param int h
@@ -397,7 +397,7 @@ public class Board {
     }
 
     /**
-     * Return the number of boats
+     * Renvoyer le nombre de bateaux
      * 
      * @return int
      */
