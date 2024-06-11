@@ -124,7 +124,7 @@ public class Menu {
         System.out.println();
         System.out.println("     @OTI Paul - Développeur");
         System.out.println("     @PITO Matahi - Développeur");
-        System.out.println("     @CORBIN DE BROCA - Développeur");
+        System.out.println("     @CORBIN DE BROCA Nuiiti - Développeur");
         System.out.println();
         System.out.println("     ╔══════════════════════╗  ╔══════════════════════╗  ╔══════════════════╗  ╔════════════════════╗");
         System.out.println("     ║ 0. Retourner au menu ║  ║ 1. Lancer une partie ║  ║ 2. Règles du jeu ║  ║ 3. En savoir  plus ║");
