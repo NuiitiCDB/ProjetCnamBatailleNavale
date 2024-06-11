@@ -2,6 +2,10 @@
 
 ![Battleship Game](https://i.ibb.co/CztjMYd/22-Capture.png "Battleship game")
 
+## Documentation
+![UML_bataille-navale2](https://github.com/NuiitiCDB/ProjetCnamBatailleNavale/assets/153875358/897a8eab-cf38-45b8-8ecb-2e91d2c4957f)
+
+
 ## Introduction
 
 Ce jeu a été développé dans le cadre du projet en programmation avancée au CNAM PF.
