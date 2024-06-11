@@ -1,6 +1,7 @@
-import helpers.ConsoleHelper;
-import helpers.CoordinateHelper;
-import helpers.TextHelper;
+package pf.cnam.bataillenavale;
+import pf.cnam.bataillenavale.helpers.ConsoleHelper;
+import pf.cnam.bataillenavale.helpers.CoordinateHelper;
+import pf.cnam.bataillenavale.helpers.TextHelper;
 
 /**
  * Represents a board which contains a 2D array of cells
