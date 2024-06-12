@@ -10,7 +10,8 @@
 
 Ce jeu a été développé dans le cadre du projet en programmation avancée au CNAM PF.
 
-https://github.com/NuiitiCDB/ProjetCnamBatailleNavale/assets/153875358/5813b466-e1ab-464e-9e4c-74de2977d895
+![World_Of_Warships_CBT_Login_Screen_Video](https://github.com/NuiitiCDB/ProjetCnamBatailleNavale/assets/153875358/76564ffd-8aec-451c-a349-5800d8295d84)
+
 
 
 ## Règles du jeu
