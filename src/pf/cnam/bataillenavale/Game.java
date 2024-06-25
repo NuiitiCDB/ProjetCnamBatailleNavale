@@ -1,8 +1,10 @@
+package pf.cnam.bataillenavale;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.regex.Pattern;
-import helpers.ConsoleHelper;
-import helpers.TextHelper;
+
+import pf.cnam.bataillenavale.helpers.ConsoleHelper;
+import pf.cnam.bataillenavale.helpers.TextHelper;
 
 /**
  * Représente un jeu

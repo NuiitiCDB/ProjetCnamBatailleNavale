@@ -1,4 +1,4 @@
-package helpers;
+package pf.cnam.bataillenavale.helpers;
 
 /**
  * Ensemble de méthodes et de propriétés utiles pour la console et l’affichage

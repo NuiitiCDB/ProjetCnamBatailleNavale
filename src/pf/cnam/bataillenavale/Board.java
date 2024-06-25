@@ -1,6 +1,7 @@
-import helpers.ConsoleHelper;
-import helpers.CoordinateHelper;
-import helpers.TextHelper;
+package pf.cnam.bataillenavale;
+import pf.cnam.bataillenavale.helpers.ConsoleHelper;
+import pf.cnam.bataillenavale.helpers.CoordinateHelper;
+import pf.cnam.bataillenavale.helpers.TextHelper;
 
 /**
  * Représente un tableau qui contient un tableau 2D de cellules

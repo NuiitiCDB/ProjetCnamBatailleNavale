@@ -1,4 +1,4 @@
-package helpers;
+package pf.cnam.bataillenavale.helpers;
 
 /**
  * Ensemble de méthodes et de propriétés utilisées pour afficher du texte

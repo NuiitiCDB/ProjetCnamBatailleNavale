@@ -1,3 +1,4 @@
+package pf.cnam.bataillenavale;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 

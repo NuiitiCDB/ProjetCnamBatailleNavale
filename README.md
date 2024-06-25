@@ -2,9 +2,17 @@
 
 ![Battleship Game](https://i.ibb.co/CztjMYd/22-Capture.png "Battleship game")
 
+## Documentation
+![UML_bataille-navale2](https://github.com/NuiitiCDB/ProjetCnamBatailleNavale/assets/153875358/897a8eab-cf38-45b8-8ecb-2e91d2c4957f)
+
+
 ## Introduction
 
 Ce jeu a été développé dans le cadre du projet en programmation avancée au CNAM PF.
+
+![World_Of_Warships_CBT_Login_Screen_Video](https://github.com/NuiitiCDB/ProjetCnamBatailleNavale/assets/153875358/76564ffd-8aec-451c-a349-5800d8295d84)
+
+
 
 ## Règles du jeu
 
@@ -34,7 +42,7 @@ Il est possible de modifier le nombre de bateaux de chaque joueur ainsi que leur
 
 ## Crédits
 
-Dernière mise à jour le 04/06/2024
+Dernière mise à jour le 11/06/2024
 
 ------------------
 

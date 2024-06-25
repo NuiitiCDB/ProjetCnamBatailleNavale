@@ -1,3 +1,4 @@
+package pf.cnam.bataillenavale;
 public class MaClassePrincipale {
     public static void main(String[] args) {
         Menu menu = new Menu();

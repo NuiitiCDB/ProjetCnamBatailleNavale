@@ -1,3 +1,4 @@
+package pf.cnam.bataillenavale;
 /**
  * Config : fichier de configuration du jeu
  */

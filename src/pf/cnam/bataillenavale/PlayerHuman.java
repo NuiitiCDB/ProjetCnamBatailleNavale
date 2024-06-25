@@ -1,7 +1,9 @@
+package pf.cnam.bataillenavale;
 import java.util.regex.Pattern;
-import helpers.ConsoleHelper;
-import helpers.CoordinateHelper;
-import helpers.TextHelper;
+
+import pf.cnam.bataillenavale.helpers.ConsoleHelper;
+import pf.cnam.bataillenavale.helpers.CoordinateHelper;
+import pf.cnam.bataillenavale.helpers.TextHelper;
 
 /**
  * Représente un joueur humain

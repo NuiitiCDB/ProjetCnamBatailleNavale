@@ -1,3 +1,4 @@
+package pf.cnam.bataillenavale;
 /**
  * Représente une cellule de tableau
  */

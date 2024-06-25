@@ -1,4 +1,4 @@
-package helpers;
+package pf.cnam.bataillenavale.helpers;
 
 /**
  * Ensemble des méthodes et propriétés utilisées pour les coordonnées du jeu

@@ -1,3 +1,4 @@
+package pf.cnam.bataillenavale;
 /**
  * Représente un bateau
  */

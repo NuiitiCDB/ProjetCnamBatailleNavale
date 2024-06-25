@@ -1,18 +1,19 @@
+package pf.cnam.bataillenavale;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
-import helpers.ConsoleHelper;
+import pf.cnam.bataillenavale.helpers.ConsoleHelper;
 
 /**
- * Représente le lanceur de jeu
+ * Represents the game launcher
  */
 public class Menu {
 
     private BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
     /**
-     * Demander à l’utilisateur de sélectionner une option de menu
+     * Ask user to select a menu option
      * 
      * @return int
      */
@@ -30,7 +31,7 @@ public class Menu {
     }
 
     /**
-     * Afficher le menu principal
+     * Show main menu
      * 
      * @return void
      */
@@ -62,7 +63,7 @@ public class Menu {
     }
 
     /**
-     * Afficher les règles du jeu
+     * Show game rules
      * 
      * @return void
      */
@@ -96,7 +97,7 @@ public class Menu {
     }
 
     /**
-     * Afficher les informations sur le jeu et la licence
+     * Show game and license information
      * 
      * @return void
      */
@@ -107,8 +108,8 @@ public class Menu {
         System.out.println("║                         En savoir plus sur ce projet                         ║");
         System.out.println("╚══════════════════════════════════════════════════════════════════════════════╝");
         System.out.println();
-        System.out.println("     Ce jeu a été développé dans le cadre du projet de fin d'année du cours Algorithmique et programmation 1 & 2 dispensé en première année de FIMI à l'INSA Lyon.");
-        System.out.println("     Il utilise les notions d'algorithmique et de programmation en Java découvertes tout au long de l'année mais également d'autres notions découvertes dans un cadre extra-scolaire.");
+        System.out.println("     Ce jeu a été développé dans le cadre du projet de fin d'année du cours NPF121 en troisème année de licence Informatique au sein du CNAM Polynéise.");
+        System.out.println("     Il utilise les notions de programmation en Java découvertes tout au long de l'unité d'enseignement mais également d'autres notions découvertes dans un cadre extra-scolaire.");
         System.out.println();
         System.out.println("     --------------- Comment jouer ? ---------------");
         System.out.println();
@@ -119,12 +120,11 @@ public class Menu {
         System.out.println();
         System.out.println("     ------------------- Crédits -------------------");
         System.out.println();
-        System.out.println("     2021 - Réutilisation et modification autorisée");
-        System.out.println("     Dernière mise à jour le 02/06/2021");
+        System.out.println("     Dernière mise à jour le 02/06/2024");
         System.out.println();
-        System.out.println("     @OTI Paul - Développeur");
-        System.out.println("     @PITO Matahi - Développeur");
-        System.out.println("     @CORBIN DE BROCA Nuiiti - Développeur");
+        System.out.println("     @Paul OTI - Apprentis Développeur");
+        System.out.println("     @Nuiiti CORBIN DE BROCA - Apprentis Développeur");
+        System.out.println("     @Matahi PITO - Apprentis Développeur");
         System.out.println();
         System.out.println("     ╔══════════════════════╗  ╔══════════════════════╗  ╔══════════════════╗  ╔════════════════════╗");
         System.out.println("     ║ 0. Retourner au menu ║  ║ 1. Lancer une partie ║  ║ 2. Règles du jeu ║  ║ 3. En savoir  plus ║");
