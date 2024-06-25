@@ -143,13 +143,13 @@ public class PlayerComputer extends Player {
     protected void setPlayerName() {
         switch (difficulty) {
             case 1:
-                playerName = "Emma";
+                playerName = "Tama";
                 break;
             case 2:
-                playerName = "Jean-Jacques";
+                playerName = "Arii";
                 break;
             case 3:
-                playerName = "Nick Berry";
+                playerName = "Tiare";
                 break;
         }
     }
