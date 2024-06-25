@@ -1,4 +1,5 @@
 package pf.cnam.bataillenavale;
+
 import pf.cnam.bataillenavale.helpers.ConsoleHelper;
 import pf.cnam.bataillenavale.helpers.CoordinateHelper;
 import pf.cnam.bataillenavale.helpers.TextHelper;
