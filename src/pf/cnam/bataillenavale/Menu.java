@@ -53,7 +53,7 @@ public class Menu {
         System.out.println(" \\_________________________________________________________________________|");
         System.out.println();
         System.out.println("╔══════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                      Bienvenue sur la bataille navale                        ║");
+        System.out.println("║                      Bienvenue dans bataille navale Cnam                     ║");
         System.out.println("╚══════════════════════════════════════════════════════════════════════════════╝");
         System.out.println();
         System.out.println("     ╔══════════════════════╗  ╔══════════════════╗  ╔════════════════════╗");
