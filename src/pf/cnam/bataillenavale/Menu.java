@@ -74,7 +74,7 @@ public class Menu {
         System.out.println("║                       Bataille navale : règles du jeu                        ║");
         System.out.println("╚══════════════════════════════════════════════════════════════════════════════╝");
         System.out.println();
-        System.out.println("     Vous allez affronter un adversaire dans une bataille sans répit sur la mer des Caraïbes.");
+        System.out.println("     Vous allez affronter un adversaire dans une bataille sans répit dans les eaux du pacifique.");
         System.out.println();
         System.out.println("     Vous disposerez tous les deux d'une flotte composée de "+ Config.getNbBoats() + " navires :");
         for (int i = 0; i < Config.getBoatsConfig().length; i++) {

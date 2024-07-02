@@ -127,7 +127,7 @@ public class PlayerHuman extends Player {
                     } else if (board.existsOverlap(boatCoordinates)) {
                         System.out.println("Votre bateau se chevauche avec un autre de vos bateaux.");
                     } else if (board.existsNeighbors(boatCoordinates)) {
-                        System.out.println("Votre bateau ne doit pas être accolé avec un autre de vos bateaux.");
+                        System.out.println("Votre bateau ne doit pas être collé avec un autre de vos bateaux.");
                     } else {
                         board.addBoat(new Boat(boatCoordinates, Integer.valueOf(Config.getBoatsConfig(i)[0]), Config.getBoatsConfig(i)[1]));
                         error = false;
@@ -152,7 +152,7 @@ public class PlayerHuman extends Player {
         String input = "";
         boolean error = true;
         do {
-            System.out.print("Comment souhaitez-vous que l'on vous appelle (3-12 caractères) ? ");
+            System.out.print("Donnez vous votre Blaze (3-12 caractères) ? ");
             try {
                 input = in.readLine().replaceAll("\\s", "-");
             } catch (java.io.IOException e) {
